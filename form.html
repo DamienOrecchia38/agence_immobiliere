@@ -5,21 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/form.css">
-    <script src="./script/main.js"></script>
+    <link rel="stylesheet" href="./style/responsive.css">
     <title>Agence immobilière</title>
 </head>
-<body>
+<body class="form_body">
     <header>
         <nav class="navbar">
-            <button class="button_navbar type="button"">ACCUEIL</button>
-            <button class="button_navbar type="button"">FORMULAIRE</button>
-        </nav>
+            <button class="button_navbar" type="button">
+                <a href="./index.html">
+                ACCUEIL
+                </a>
+            </button>
+            <button class="button_navbar" type="button">
+                <a href="./form.html">
+                FORMULAIRE
+                </a>
+            </button>
+        </nav>  
     </header>
 
     <img src="./assets/background_image_form.jpg" alt="hand holding a house" class="image_background">
     <div class="banner" id="banner_form">
         <H1>AJOUTER UNE ANNONCE</H1>
     </div>
+
+    <form id="form_ad">
+        <div class="form_element">
+            <label for="title">Titre de l'annonce</label><br>
+            <textarea name="title" id="title" required></textarea>
+        </div>
+
+        <div class="form_element">
+            <label for="type">Type</label><br>
+            <select name="type" id="type">
+                <option value="" disabled selected>Sélectionner le type</option>
+                <option value="maison">Maison</option>
+                <option value="appartement">Appartement</option>
+                <option value="terrain">Terrain</option>
+            </select>
+        </div>
+
+        <div class="form_element">
+            <label for="price">Prix (en euros)</label><br>
+            <input type="number" id="price" name="price" required>
+        </div>
+
+        <div class="form_element">
+            <label for="location">Emplacement</label><br>
+            <textarea name="location" id="location" required></textarea>
+        </div>
+
+        <div class="form_element">
+            <label for="description">Description</label><br>
+            <textarea name="description" id="description" required></textarea>
+        </div>
+
+        <div class="form_element">
+            <label for="surface">Surface (en m²)</label><br>
+            <input type="number" id="surface" name="surface" required>
+        </div>
     
+        <div class="form_element">
+            <label for="rooms">Nombre de pièces</label><br>
+            <input type="number" id="room" name="room" required>
+        </div>
+    
+        <div class="form_element">
+            <label for="garden">Jardin</label><br>
+            <input type="checkbox" id="garden" name="garden">
+        </div>
+    
+        <div class="form_element">
+            <label for="garage">Garage</label><br>
+            <input type="checkbox" id="box" name="box">
+        </div>
+
+        <div class="form_element">
+            <label for="ground">Etages</label><br>
+            <input type="checkbox" id="ground" name="ground">
+        </div>
+    
+        <div class="form_element">
+            <label for="elevator">Ascenseur</label><br>
+            <input type="checkbox" id="elevator" name="elevator">
+        </div>
+
+        <div class="form_element">
+            <label for="buildable">Constructible</label><br>
+            <input type="checkbox" id="buildable" name="buildable">
+        </div>
+
+        <input type="submit" value="AJOUTER" id="add_form"/>
+    </form>
+    
+    <script src="./script/main.js" type="module"></script>
+    <script src="./class/BienImmobilier.js" type="module"></script>
+    <script src="./class/Appartement.js" type="module"></script>
+    <script src="./class/Maison.js" type="module"></script>
+    <script src="./class/Terrain.js" type="module"></script>
 </body>
 </html>

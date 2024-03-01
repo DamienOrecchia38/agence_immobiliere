@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/home.css">
-    <script src="./script/main.js"></script>    
+    <link rel="stylesheet" href="./style/responsive.css">  
     <title>Agence immobilière</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <button class="button_navbar role="button"">ACCUEIL</button>
-            <button class="button_navbar role="button"">FORMULAIRE</button>
-        </nav>
+            <button class="button_navbar" type="button">
+                <a href="./index.html">
+                ACCUEIL
+                </a>
+            </button>
+            <button class="button_navbar" type="button">
+                <a href="./form.html">
+                FORMULAIRE
+                </a>
+            </button>
+        </nav>  
     </header>
 
     <img src="./assets/background_image_home.jpg" alt="hand holding a house" class="image_background">
@@ -22,11 +30,11 @@
         <h1>LISTE DES ANNONCES</h1>
     </div>
 
-    <div class="ad_container">
+    <div class="ad_container" id="container">
         <div class="ad" id="ad_1">
             <img src="./assets/house_tree.jpg" alt="house in a tree">
             <div class="ad_elements">
-                <h2>Maison haut perché</h2>
+                <h2>Maison haut perchée</h2>
                 <p class="ad_price">1.500.000 €</p>
                 <p class="ad_adress">38 chemin des Chuchotements Arboricoles, Grenoble</p>
                 <p class="ad_description">Vous en avez assez de la vie au ras du sol ? Marre de vos voisins qui vous espionnent par-dessus la clôture ? Alors, cette maison perchée dans les arbres est faite pour vous !</p>
@@ -36,7 +44,7 @@
         <div class="ad" id="ad_2">
             <img src="./assets/house_upside_down.jpg" alt="house upside down">
             <div class="ad_elements">
-                <h2>Maison retourné</h2>
+                <h2>Maison retournée</h2>
                 <p class="ad_price">200.000 €</p>
                 <p class="ad_adress">Boulevard de l'Antigravité, chemin du Défi Gravitationnel, Grenoble</p>
                 <p class="ad_description">Si vous en avez assez de la routine, préparez-vous à une expérience immobilière qui va littéralement vous retourner la vie à l'envers (ou devrais-je dire à l'endroit ?)! Cette maison retournée est une ode à l'absurdité architecturale, conçue pour ceux qui pensent que la gravité est juste une suggestion.</p>  
@@ -51,15 +59,15 @@
                 <p class="ad_adress">Allée des Bulles Sucrées, Grenoble</p>
                 <p class="ad_description">Vous avez toujours rêvé de vivre dans un monde sucré, où les murs sont élastiques et les voisins collants ? Ne cherchez plus ! Cette maison à mâcher est la réponse à tous vos fantasmes immobiliers !</p>
             </div>
-        </div> 
+        </div>
 
         <div class="ad" id="ad_4">
             <img src="./assets/house_bird.jpg" alt="bird house">
             <div class="ad_elements">
                 <h2>Maison oiseau</h2> 
                 <p class="ad_price">80.000 €</p>
-                <p class="ad_adress"></p>
-                <p class="ad_description"></p>       
+                <p class="ad_adress">Chemin des Plumes Enchantées, Nid-de-l'Oiseau-sur-Mer</p>
+                <p class="ad_description">Vivez une expérience unique dans cette maison perchée dans les airs, où vous pourrez vous réveiller au son des chants d'oiseaux et vous envoler vers de nouvelles aventures. Attention, les voisins peuvent être un peu bruyants, mais ils sont toujours prêts à vous apprendre à voler !</p>       
             </div>
         </div>     
 
@@ -68,11 +76,12 @@
             <div class="ad_elements">
                 <h2>Maison Igloo</h2>
                 <p class="ad_price">40.000 €</p>
-                <p class="ad_adress"></p>
-                <p class="ad_description"></p>     
+                <p class="ad_adress">Rue des Pingouins Farceurs, Banquise-sur-Mer</p>
+                <p class="ad_description">Vivez une expérience polaire unique dans cette maison igloo où vous pourrez vous réchauffer avec style. Profitez de la vue imprenable sur la banquise et des soirées animées par les pingouins farceurs. Attention, les glissades sur le sol sont inévitables, mais les fous rires sont garantis !</p>     
             </div>
-        </div>     
+        </div>
     </div>
 
+    <script src="./script/main.js" type="module"></script>  
 </body>
 </html>

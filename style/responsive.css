@@ -1,0 +1,61 @@
+@media only screen and (max-width: 967px) {
+    .ad {
+        height: 200px;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+
+    .navbar button {
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .image_background {
+        height: 300px;
+    }
+
+    .banner {
+        height: 30px;
+        font-size: smaller;
+    }
+
+    .ad {
+        height: 180px;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar button {
+        height: 30px;
+        font-size: 8px;
+    }
+
+    .image_background {
+        height: 250px;
+    }
+
+    .banner {
+        height: 20px;
+        font-size: 10px;
+    } 
+}
+
+@media only screen and (max-width: 447px) {
+    .navbar button {
+        width: auto;
+        height: 20px;
+        font-size: 5px;
+    }
+
+    .image_background {
+        height: 200px;
+    }
+
+    .banner {
+        height: 10px;
+        font-size: 5px;
+    } 
+}
