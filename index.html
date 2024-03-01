@@ -82,6 +82,28 @@
         </div>
     </div>
 
-    <script src="./script/main.js" type="module"></script>  
+    <script>
+        // update UI homepage to display new ad
+        let ad_container = document.getElementById('container');
+        let ads = JSON.parse(localStorage.getItem('ads')) || [];
+        console.log(ads);
+        ads.forEach(ad => {
+            let new_element = document.createElement('div');
+            new_element.className = 'ad';
+            new_element.innerHTML = `
+                <h2>${ad.title}</h2>
+                <p>${ad.price} €</p>
+                <p>${ad.location}</p>
+                <p>${ad.description}</p>
+            `;
+            ad_container.appendChild(new_element);
+        });
+    </script>
+
+    <script src="./script/main.js" type="module" defer></script>
+    <script src="./class/BienImmobilier.js" type="module"></script>
+    <script src="./class/Appartement.js" type="module"></script>
+    <script src="./class/Maison.js" type="module"></script>
+    <script src="./class/Terrain.js" type="module"></script>  
 </body>
 </html>
