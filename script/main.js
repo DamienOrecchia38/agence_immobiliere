@@ -7,17 +7,17 @@ let form = document.getElementById('form_ad');
 let new_ad;
 
 document.getElementById('type').addEventListener('change', function() {
-    var type = this.value;
+    let type = this.value;
 
-    // Masquer tous les éléments de formulaire spécifiques
-    var elements = document.querySelectorAll('.form_element_specific');
-    for (var i = 0; i < elements.length; i++) {
+    // Hide all specific form elements
+    let elements = document.querySelectorAll('.form_element_specific');
+    for (let i = 0; i < elements.length; i++) {
         elements[i].style.display = 'none';
     }
 
-    // Afficher les éléments de formulaire spécifiques au type sélectionné
-    var elementsToShow = document.querySelectorAll('.form_element_' + type);
-    for (var i = 0; i < elementsToShow.length; i++) {
+    // Display form elements specific to the selected type
+    let elementsToShow = document.querySelectorAll('.form_element_' + type);
+    for (let i = 0; i < elementsToShow.length; i++) {
         elementsToShow[i].style.display = 'flex';
     }
 });
